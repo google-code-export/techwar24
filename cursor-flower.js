@@ -10,11 +10,11 @@ if(document.getElementById && !document.all){
 	var ns6up = 0;
 }
 
-document.write("<img id=im1 src='http://4.bp.blogspot.com/-zFpQImi2A0w/U9d3vJFJbAI/AAAAAAAADBg/B714Hs8h8vQ/s1600/image1.gif' style='position:absolute; left: 26px; top: 22px;' >");
-document.write("<img id=im2 src='http://4.bp.blogspot.com/--6rGHQZ965A/U9d3vD6rCkI/AAAAAAAADBY/ztgawAuutT0/s1600/image2.gif' style='position:absolute; left: 52px; top: 44px;' >");
-document.write("<img id=im3 src='http://3.bp.blogspot.com/-M7U6-zcEPdo/U9d3vCOOSSI/AAAAAAAADBc/Efsxa62QfrI/s1600/image3.gif' style='position:absolute; left: 78px; top: 66px;' >");
-document.write("<img id=im4 src='http://4.bp.blogspot.com/-ow-4jpMEBpY/U9d3wQAr5TI/AAAAAAAADBs/HwKdqnoY2kY/s1600/image4.gif' style='position:absolute; left: 104px; top: 88px;' >");
-document.write("<img id=im5 src='http://2.bp.blogspot.com/-TzO9jX3MJEM/U9d3wxglByI/AAAAAAAADBw/v-syLC9xPWQ/s1600/image5.gif' style='position:absolute; left: 130px; top: 110px;' >");
+for(var f=1; f<6; f++){
+    var fa = f*26;
+    var fb = f*22;
+    document.write("<img id=im"+f+" src='http://hscripts.com/scripts/JavaScript/hcursortail/image"+f+".gif' style='position:absolute; left: "+fa+"px; top: "+fb+"px;' >");
+}
 
 
 var moving=1;
