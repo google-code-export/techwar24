@@ -3,7 +3,6 @@ if(document.all){
 }else{
 	var ie4up = 0;
 }
-
 if(document.getElementById && !document.all){
 	var ns6up = 1;
 }else{
@@ -15,7 +14,6 @@ for(var f=1; f<6; f++){
     var fb = f*22;
     document.write("<img id=im"+f+" src='http://hscripts.com/scripts/JavaScript/hcursortail/image"+f+".gif' style='position:absolute; left: "+fa+"px; top: "+fb+"px;' >");
 }
-
 
 var moving=1;
 var onmove = false,imgw=89,imgh=87;
@@ -71,6 +69,7 @@ timer = setTimeout('ranrot()',1000);
 ranrot();
 function mover(x,y,moving)
 {  
+	
 	if(moving < 6){
 		var ele = document.getElementById("im"+moving);
            if(x<(winW) && y<(winH))
@@ -80,7 +79,10 @@ function mover(x,y,moving)
     		var afb = (moving-1)*26;
             var l=x+afa;
 		var t=y+afb;
-		
+		if(moving==1){
+			afb=afb+5;
+			afa=afa+5;
+		}
             if(l>(winW-109) && t<(winH-109))
             {
             ele.style.left = winW-(imgw+21);
@@ -119,8 +121,6 @@ var x=x1+b[0];
 var y=y1+b[1];
 setTimeout('mover('+x+','+y+',1)',100);
 }
-
-
 function iecompattest()
 {
 	if(document.compatMode && document.compatMode!="BackCompat")
