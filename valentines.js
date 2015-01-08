@@ -6,10 +6,10 @@ if (run){
 /* This was published by www.thetechwar.com */
 
 var image="http://1.bp.blogspot.com/-5nXD-_2FUGA/VK6lcGZh04I/AAAAAAAAESU/i1XLcwF0zik/s1600/valentines-glitter-7.gif";  //Image path should be given here
-var no = 8; // No of images should fall
+var no = 6; // No of images should fall
 var time = 0; // Configure whether image should disappear after x seconds (0=never):
 var speed = 50; // Fix how fast the image should fall
-var i, dwidth = 400, dheight =500; 
+var i, dwidth = 200, dheight =250; 
 var nht = dheight;
 var toppos = 0;
 document.getElementsByTagName('body')[0].style['overflow-x'] = 'none !important';
